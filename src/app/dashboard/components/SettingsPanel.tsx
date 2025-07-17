@@ -1,6 +1,6 @@
 "use client";
 
-import { User } from "@/interface/random-user";
+import { User } from "../../../interface/random-user";
 import styles from "./SettingsPanel.module.scss";
 import Image from "next/image";
 

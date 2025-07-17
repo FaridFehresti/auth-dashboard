@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useUser } from "@/context/UserContext";
 import styles from "./Dashboard.module.scss";
 import {
     FiHome,
@@ -21,6 +20,7 @@ const menuItems = [
     { id: "settings", label: "Settings", icon: <FiSettings /> },
 ];
 import Image from "next/image";
+import { useUser } from "../../context/UserContext";
 
 export default function Dashboard() {
     const { user, setUser } = useUser();

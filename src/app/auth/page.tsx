@@ -2,9 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useUser } from "@/context/UserContext";
-import { User } from "@/interface/random-user"; 
 import styles from "./Auth.module.scss";
+import { useUser } from "../../context/UserContext";
+import { User } from "../../interface/random-user";
+import InputComponent from "./components/Input.component";
+import ButtonComponent from "./components/Button.component";
 
 export default function Auth() {
   const router = useRouter();
@@ -48,26 +50,22 @@ export default function Auth() {
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") handleLogin();
-  };
-
   return (
     <div className={styles.authContainer}>
       <div className={styles.form}>
         <h1 className={styles.title}>Sign In</h1>
         <label>Phone Number (Iran)</label>
-        <input
+        <InputComponent
           type="text"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          onKeyDown={handleKeyDown}
+          onKeyDown={(e) => e.key === "Enter" && handleLogin()}
           placeholder="09xxxxxxxxx"
         />
         {error && <p className={styles.error}>{error}</p>}
-        <button onClick={handleLogin} disabled={loading}>
+        <ButtonComponent onClick={handleLogin} disabled={loading}>
           {loading ? "Signing in..." : "Sign In"}
-        </button>
+        </ButtonComponent>
       </div>
     </div>
   );

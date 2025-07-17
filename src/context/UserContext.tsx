@@ -1,7 +1,7 @@
 "use client";
 
-import { User } from "@/interface/random-user";
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { User } from "../interface/random-user";
 
 interface UserContextType {
   user: User | null;
