@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Auth Dashboard
 
-## Getting Started
+A clean, responsive authentication dashboard built with **Next.js**, **React**, **TypeScript**, and **SCSS**. This project was developed as a task for a recruiter and showcases a responsive UI with both **CSS Grid** and **Flexbox** sections to demonstrate layout versatility.
 
-First, run the development server:
+## 🚀 Project Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This dashboard simulates a basic authentication layout with multiple cards and UI sections. It demonstrates modern frontend development techniques, including:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Responsive design using both **Grid** and **Flexbox**
+- Reusable components
+- Clean and scalable file structure
+- Styled with SCSS and React Icons (via **react-icons/fi**)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Demo Sections
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Grid Section** – Demonstrates responsive behavior using CSS Grid
+- **Flex Section** – Mirrors the layout with Flexbox for comparison
 
-## Learn More
+These additions were made to emphasize layout flexibility and responsiveness beyond the original task.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**
+- **React**
+- **TypeScript**
+- **SCSS**
+- **React Icons (Fi)**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Folder Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
